@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt- br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro para fazer tabuada</title>
+</head>
+<body>
+    <div>
+        <h1>Tabuada</h1>
+        <h2>data da consulta</h2>
+        <p><?php echo date("d/m/Y"); ?></p>
+
+        <form action="tabuadaAction.php" method="post">
+            <label for="txtValor">Digite um valor:</label>
+            <input type="number" id="txtValor" name="txtValor" required>
+            <br><br>
+            <input type="submit" value="Calcular Tabuada" name="btnCalcular">
+            <input type="submit" value="Gerar Todas as Tabuadas" name="btnGerar">
+        </form>
+    </div>
+
+    <div>
+        <h2>Escolha qual tabuada você deseja visualizar</h2>
+        <form action="tabuadaAction.php" method="post">
+            <button type="submit" name="btn7">7</button>
+            <button type="submit" name="btn8">8</button>
+            <button type="submit" name="btn9">9</button>
+            <br><br>
+            <button type="submit" name="btn4">4</button>
+            <button type="submit" name="btn5">5</button>
+            <button type="submit" name="btn6">6</button>
+            <br><br>
+            <button type="submit" name="btn1">1</button>
+            <button type="submit" name="btn2">2</button>
+            <button type="submit" name="btn3">3</button>
+            <br><br>
+            <button type="submit" name="btn0">0</button>
+    </div>
+</body>
+</html>
